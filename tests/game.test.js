@@ -160,8 +160,8 @@ test('encrypt shield deducts extra coins per shot', async ({ page }) => {
   await waitForPlaying(page);
   await page.waitForTimeout(200);
 
-  // Enable shield
-  await page.evaluate(() => { window.__gameState.shieldOn = true; });
+  // Use SLOW speed (no extra) + shield, so total = 10 + 0 + 8 = 18
+  await page.evaluate(() => { window.__gameState.shieldOn = true; window.__gameState.speedIdx = 0; });
 
   const before = await page.evaluate(() => window.__gameState.coins);
 
