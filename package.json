@@ -1,0 +1,13 @@
+{
+  "name": "frontrunner",
+  "version": "1.0.0",
+  "description": "FRONTRUNNER - Tactical Projectile System Telegram Mini App",
+  "scripts": {
+    "start": "node server.js",
+    "test": "PLAYWRIGHT_BROWSERS_PATH=/root/.cache/ms-playwright npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  },
+  "dependencies": {}
+}
