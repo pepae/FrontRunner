@@ -5,14 +5,13 @@
 }
 
 body {
-    background: #08080e;
+    background: #eaeaee;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100dvh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
     overflow: hidden;
-    color: #ffffff;
     touch-action: none;
 }
 
@@ -28,52 +27,50 @@ body {
 
 #loading-screen {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #08080e;
+    inset: 0;
+    background: #eaeaee;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 #loading-screen h1 {
-    color: #ffcc00;
-    font-size: 2.8em;
-    letter-spacing: 0.4em;
+    color: #1a1a2e;
+    font-size: 2.6em;
     font-weight: 900;
-    margin-bottom: 8px;
+    letter-spacing: 0.35em;
+    margin-bottom: 6px;
 }
 
 #loading-screen .subtitle {
-    color: rgba(255,255,255,0.35);
-    font-size: 0.75em;
-    letter-spacing: 0.25em;
-    margin-bottom: 48px;
+    color: rgba(26,26,46,0.4);
+    font-size: 0.72em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin-bottom: 52px;
 }
 
 #loading-bar-container {
-    width: 240px;
-    height: 2px;
-    background: rgba(255,255,255,0.1);
-    margin-bottom: 16px;
+    width: 200px;
+    height: 3px;
+    background: rgba(26,26,46,0.12);
+    border-radius: 2px;
+    margin-bottom: 14px;
 }
 
 #loading-bar {
     height: 100%;
     width: 0%;
-    background: #ffcc00;
+    background: #f5900a;
+    border-radius: 2px;
     transition: width 0.08s linear;
 }
 
 #loading-text {
-    color: rgba(255,255,255,0.2);
-    font-size: 0.65em;
-    letter-spacing: 0.15em;
+    color: rgba(26,26,46,0.3);
+    font-size: 0.62em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
 }
